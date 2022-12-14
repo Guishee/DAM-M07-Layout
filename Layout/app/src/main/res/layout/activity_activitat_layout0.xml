@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrameLayout0">
+
+    <ImageButton
+        android:id="@+id/imageView"
+        android:layout_width="249dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/random" />
+
+    <ImageButton
+        android:id="@+id/flecha"
+        android:layout_width="125dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="270dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:text=""
+        android:textSize="21dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/flecha" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_marginTop="350dp"
+        android:layout_marginBottom="300dp"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 1.1" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 1.2" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 1.3" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 2.1" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 2.2" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 2.3" />
+
+        <TextView
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="1"
+            android:text="Celda doble de ancho 3.1" />
+
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="Celda 3.2" />
+    </GridLayout>
+    <TableLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="0,1,2"
+        android:layout_marginTop="450dp"
+        android:layout_marginBottom="200dp">
+        <TableRow>
+            <TextView android:text="Celda 1.1" />
+            <TextView android:text="Celda 1.2" />
+            <TextView android:text="Celda 1.3" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Celda 2.1" />
+            <TextView android:text="Celda 2.2" />
+            <TextView android:text="Celda 2.3" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Celda doble de ancho 3.1"
+                android:layout_span="2" />
+            <TextView android:text="Celda 3.2" />
+        </TableRow>
+    </TableLayout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="620dp"
+        android:layout_marginBottom="0dp">
+
+        <EditText android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <Button android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtNombre"
+            android:layout_alignParentRight="true"
+            android:text="Aceptar" />
+    </RelativeLayout>
+
+</FrameLayout>
