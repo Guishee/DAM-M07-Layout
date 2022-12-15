@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class LinearLayout extends AppCompatActivity {
+public class LinearLayout0 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_linear_layout);
+        setContentView(R.layout.activity_linear_layout0);
 
         ImageButton btn = (ImageButton) findViewById(R.id.flechaLinear);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LinearLayout.this,  MainActivity.class);
+                Intent intent = new Intent(LinearLayout0.this,  MainActivity0.class);
                 startActivity(intent);
             }
         });

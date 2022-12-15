@@ -14,25 +14,28 @@
         android:theme="@style/Theme.Layout"
         tools:targetApi="31">
         <activity
-            android:name=".ActivitatLayout"
+            android:name=".Botones"
             android:exported="false" />
         <activity
-            android:name=".RelativeLayout"
+            android:name=".ActivitatLayout0"
             android:exported="false" />
         <activity
-            android:name=".GridLayout"
+            android:name=".RelativeLayout0"
             android:exported="false" />
         <activity
-            android:name=".TableLayout"
+            android:name=".GridLayout0"
             android:exported="false" />
         <activity
-            android:name=".LinearLayout"
+            android:name=".TableLayout0"
             android:exported="false" />
         <activity
-            android:name=".FrameLayout"
+            android:name=".LinearLayout0"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".FrameLayout0"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity0"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
