@@ -50,4 +50,5 @@ public class AdaptadorDatos extends RecyclerView.Adapter<AdaptadorDatos.ViewHold
 
         }
     }
+
 }

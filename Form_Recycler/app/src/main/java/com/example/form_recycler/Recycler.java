@@ -1,10 +1,15 @@
 package com.example.form_recycler;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -28,7 +33,18 @@ public class Recycler extends AppCompatActivity {
 
         AdaptadorDatos adapter=new AdaptadorDatos(listDatos);
         recycler.setHasFixedSize(true);
-        recycler.setLayoutManager(new LinearLayoutManager(this));
+        recycler.setLayoutManager(new GridLayoutManager(this,3));
         recycler.setAdapter(adapter);
+
+
+        recycler.addOnItemTouchListener(
+                new RecyclerItemClicListener(Recycler.this, new RecyclerItemClicListener.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(View v, int position) {
+
+                        Toast.makeText(Recycler.this, "Item en la posición: " + (position+1), Toast.LENGTH_SHORT).show();
+                    }
+                })
+        );
     }
 }
