@@ -54,16 +54,15 @@
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="323dp"
         android:layout_height="57dp"
-        android:layout_marginTop="5dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text=""
-        android:hint="Apellido"
-        android:drawableLeft="@drawable/persona2"
-        android:drawablePadding="10dp"
         android:layout_below="@+id/editTextTextPersonName"
         android:layout_centerHorizontal="true"
-        />
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/persona2"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        android:text="" />
 
     <TextView
         android:id="@+id/textView3"
@@ -113,8 +112,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:text="Lista de productos"
         android:onClick="listaProductos"
+        android:text="Lista de productos"
 
         />
 

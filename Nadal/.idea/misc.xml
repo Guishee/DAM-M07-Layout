@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Willyrex/clase/M07/Nadal/app/src/main/res/layout/activity_main.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/Willyrex/clase/M07/Nadal/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Willyrex/clase/M07/Nadal/app/src/main/res/layout/activity_tarjeta.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/Willyrex/clase/M07/Nadal/app/src/main/res/layout/toolbar.xml" value="0.17798913043478262" />
       </map>
     </option>
   </component>
